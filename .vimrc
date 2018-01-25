@@ -55,7 +55,8 @@ Plug 'kien/tabman.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Terminal Vim with 256 colors colorscheme
-Plug 'fisadev/fisa-vim-colorscheme'
+Plug 'flazz/vim-colorschemes'
+" Plug 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
 Plug 'rosenfeld/conque-term'
 " Pending tasks list
@@ -199,7 +200,7 @@ nmap ,wr :Ack <cword><CR>
 " use 256 colors when possible
 if (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256') || has('nvim')
 	let &t_Co = 256
-    colorscheme fisa
+    colorscheme molokai_dark
 else
     colorscheme delek
 endif
@@ -393,7 +394,8 @@ let g:choosewin_overlay_enable = 1
 " Airline ------------------------------
 
 let g:airline_powerline_fonts = 0
-let g:airline_theme = 'bubblegum'
+" bubblegumy
+let g:airline_theme = 'wombat'
 let g:airline#extensions#whitespace#enabled = 0
 
 " to use fancy symbols for airline, uncomment the following lines and use a
